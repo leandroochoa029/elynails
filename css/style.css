@@ -8,59 +8,51 @@
     src: url('../assets/Montserrat-VariableFont_wght.ttf');
 }
 
+
+
 .texto {
-    color: #131f38;
+    color: #270a1e;
     font-family: 'Monserrat';
 }
+
+
 
 /* Menu de navegacion */
 
-.menuNavegador {
-    background-color: #FFACAC;
-    padding: 15px;
-    text-align: center;
+.navbar.navbar-expand-md {
+
+    background-color: #fccccc;
 }
 
-.menuNavegador ul li {
-    display: inline;
-    padding: 15px;
+
+
+.navbar-brand {
+
+    height: 70px;
 }
 
-.menuNavegador ul {
-    list-style-type: none;
+.nav-link {
+
+    font-size: 22px;
 }
-
-.menuNavegador ul li a {
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Monserrat';
-    font-style: normal;
-    color: black;
-
-}
-
 
 /* fin menu */
 
-h2 {
-    padding: 12px;
-
-}
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Monserrat';
     font-size: 20px;
 }
 
 
 .fondo {
-    background-color: #f7bbbb;
+    background-color: #ffd5d5;
 }
 
 /* cards */
 
 .cards {
-    background-color: #f7bbbb;
+    background-color: #ffd5d5;
     text-align: center;
 
 }
@@ -78,9 +70,9 @@ p {
     display: inline-block;
     width: 30%;
     text-align: left;
-    background-color: #eee5d9;
-    border: 1px solid #3A4F7A;
+    background-color: #f8c5c5;
     margin: 20px;
+
 }
 
 .card_body2 p {
@@ -90,37 +82,27 @@ p {
 }
 
 
-
-
 /* Hero */
 
-.hero {
-    background-color: #f7bbbb;
-    display: inline-block;
-}
 
 .hero img {
-    display: inline-block;
-    width: 40%;
-    height: 600px;
+
+    height: 750px;
     object-fit: cover;
-    padding: 50px;
-    position: relative;
-    right: 1015px;
+
+
+
+
 }
 
-.hero_content {
-    display: inline-block;
-    width: 49%;
-    padding: 50px;
-    font-family: 'Monserrat';
-    position: relative;
-    bottom: 400px;
-    left: 800px
-}
 
-.hero_content p {
-    font-family: 'Monserrat';
+
+.Instagram img {
+
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
 }
 
 
@@ -141,19 +123,19 @@ p {
 
 .box_servicios:nth-child(odd) {
 
-    background-color: #FFACAC;
+    background-color: #f8c5c5;
 }
 
 .box_servicios:nth-child(even) {
 
     flex-direction: row-reverse;
-    background-color: #FFACAC;
+    background-color: #f8c5c5;
 }
 
 .box_servicios:hover {
 
-    background-color: #f3d3d3;
-    box-shadow: 5px 5px 5px 0px #ca9090;
+    background-color: #fdbaba;
+    box-shadow: 5px 5px 5px 0px #b38b8b;
     transition: .5s;
 }
 
@@ -194,6 +176,8 @@ p {
 
 }
 
+
+
 .box_servicios h2 {
 
     color: #0f192c;
@@ -212,44 +196,29 @@ p {
     justify-content: space-evenly;
     align-items: center;
     gap: 60px;
-    
+
 }
 
 
 .box_productos {
 
     width: 1800px;
-    height: 500px;
-    background-color: #FFACAC;
+    height: 600px;
+    background-color: #f8c5c5;
     display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
-   
+
 
 }
 
 .box_productos:hover {
-    box-shadow: 5px 5px 5px 0px #ca9090;
+    box-shadow: 5px 5px 5px 0px #b38b8b;
     transition: .5s;
-    background-color: #f3d3d3;
-    
+    background-color: #fdbaba;
+
 
 }
-
-.box_productos img {
-    width: 750px;
-    height: 500px;
-    object-fit: cover;
-    
-
-}
-
-.box_productos:hover img {
-
-    height: 550px;
-    transition: .8s;
-}
-
 
 
 .box_productos p {
@@ -257,6 +226,7 @@ p {
     padding: 60px;
     color: #0f192c;
     font-family: 'Monserrat';
+    margin: 0;
 
 }
 
@@ -267,73 +237,76 @@ p {
     padding: 30px;
 }
 
+.btn {
+
+    margin-left: 40px;
+    background-color: #ffbbbb;
+    border-color: #ffffff;
+}
 
 .mapa {
 
-    padding: 50px;
+    margin-bottom: 30px;
+    width: 1200px;
+    height: 600px;
+
 }
 
 
 
 /* grilla */
 
-.grids_trabajos {
+.encabezado {
+
+    text-align: center;
+
+
+
+
+
+}
+
+h3 {
+    padding: 12px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 70px;
+
+}
+
+h4 {
+
+    padding: 12px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.grids {
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-        "area1 area2"
-        "area3 area4"
-        "area5 area6"
-        "area7 area8";
-    gap: 100px;
-    padding: 15px;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 100px;
 
 }
 
 
-.grid_trabajos img {
+.grid img {
 
-    width: 600px;
+    width: 450px;
     height: 400px;
     object-fit: cover;
-    border: 1px solid #0f192c;
-}
 
-.f1 {
 
-    grid-area: area1;
-}
 
-.f2 {
-    grid-area: area2;
-}
 
-.f3 {
 
-    grid-area: area3;
-}
 
-.f4 {
-    grid-area: area4;
-}
 
-.f5 {
-    grid-area: area5;
-}
-
-.f6 {
-    grid-area: area6;
-}
-
-.f7 {
-    grid-area: area7;
-}
-
-.f8 {
-    grid-area: area8;
 }
 
 
@@ -343,30 +316,48 @@ p {
 @media only screen and (max-width:1024px) {
 
 
+    h3 {
+        padding: 12px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 45px;
 
+    }
 
+    h4 {
 
-    .grids_trabajos {
+        padding: 12px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        font-size: 30px;
+    }
 
-        grid-template-columns: repeat(2);
+    .grids {
+
+        grid-template-columns: repeat(3);
         grid-template-rows: auto;
         grid-template-areas:
-            "area1 area2"
-            "area3 area4"
-            "area5 area6"
-            "area7 area8";
+            "area1 area2 area3"
+            "area6 area7 area8";
 
 
-    }
-
-    .grid_trabajos img {
-
-        width: 100%;
-        height: 100%;
 
     }
 
+    .grid img {
 
+        width: 250px;
+        height: 150px;
+
+    }
+
+    .mapa {
+
+        width: 750px;
+        height: 300px;
+        justify-content: center;
+
+    }
 
 }
 
@@ -378,17 +369,44 @@ p {
 
 @media only screen and (max-width:480px) {
 
+    h3 {
+        padding: 12px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 25px;
 
+    }
 
+    h4 {
 
-    .grids_trabajos {
+        padding: 12px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        font-size: 25px;
+    }
+
+    .grids {
 
         display: flex;
         flex-direction: column;
+        margin-left: 30px;
 
 
     }
 
+    .grid img {
 
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .mapa {
+
+        width: 300px;
+        height: 300px;
+        
+
+    }
 
 }
