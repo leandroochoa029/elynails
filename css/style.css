@@ -11,7 +11,7 @@
 
 
 .texto {
-    color: #270a1e;
+    color: #564f70;
     font-family: 'Monserrat';
 }
 
@@ -156,12 +156,7 @@ p {
     background-color: #f7bbbb;
     display: flex;
     overflow: hidden;
-
-
-
-
-
-
+    
 }
 
 .box_servicios img {
@@ -175,7 +170,7 @@ p {
 .box_servicios p {
 
     padding: 50px;
-    color: #0f192c;
+    color: #564f70;
     font-family: 'Monserrat';
 
 }
@@ -184,7 +179,7 @@ p {
 
 .box_servicios h2 {
 
-    color: #0f192c;
+    color: #564f70;
     font-family: 'Monserrat';
     padding: 30px;
 }
@@ -227,8 +222,8 @@ p {
 
 .box_productos p {
 
-    padding: 60px;
-    color: #0f192c;
+    padding: 50px;
+    color: #564f70;
     font-family: 'Monserrat';
     margin: 0;
 
@@ -236,7 +231,7 @@ p {
 
 .box_productos h2 {
 
-    color: #0f192c;
+    color: #564f70;
     font-family: 'Monserrat';
     padding: 30px;
 }
@@ -247,6 +242,7 @@ p {
     background-color: #ffbbbb;
     border-color: #ffffff;
 }
+
 
 .mapa {
 
@@ -363,6 +359,98 @@ h4 {
 
     }
 
+    .hero img {
+
+        height: 350px;
+        object-fit: cover;
+    
+    
+    
+    
+    }
+
+    /* cards */
+
+    .card_body2 img {
+
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    
+    }
+    
+    .card_body2 {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        text-align: left;
+        background-color: #f8c5c5;
+        
+        
+    
+    }
+    
+    .card_body2 p {
+        font-family: 'Monserrat';
+        font-size: 15px;
+    
+        padding: 10px;
+    }
+
+    /* boxes */
+
+    .boxes_servicios {
+        padding: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+    
+    
+    }
+
+    .box_servicios {
+
+        width: 900px;
+        height: 300px;
+        background-color: #f7bbbb;
+        display: flex;
+        
+    }
+
+    .box_servicios img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+    
+    
+    }
+
+    .box_servicios:hover img {
+
+        height: 350px;
+        transition: .8s;
+    }
+
+    .box_servicios p {
+
+        padding: 20px;
+        color: #564f70;
+        font-family: 'Monserrat';
+        font-size: 14px;
+    
+    }
+    
+    
+    
+    .box_servicios h2 {
+    
+        color: #564f70;
+        font-family: 'Monserrat';
+        padding: 10px;
+        font-size: 20px;
+    }
+
 }
 
 
@@ -412,5 +500,43 @@ h4 {
         
 
     }
+    .hero img {
+
+        height: 150px;
+        object-fit: cover;
+    
+    
+    
+    
+    }
+
+    /* cards */
+
+    .card_body2 img {
+
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    
+    }
+    
+    .card_body2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: left;
+        background-color: #f8c5c5;
+        
+        
+    
+    }
+    
+    .card_body2 p {
+        font-family: 'Monserrat';
+        font-size: 12px;
+    
+        padding: 10px;
+    }
+
 
 }
