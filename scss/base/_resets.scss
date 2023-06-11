@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Monserrat';
+    src: url('../assets/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.texto {
+    color: #564f70;
+    font-family: 'Monserrat';
+}
+
+.fondo {
+    background-color: #ffd5d5;
+}
+
+p {
+    font-family: 'Monserrat';
+    font-size: 20px;
+}

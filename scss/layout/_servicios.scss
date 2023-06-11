@@ -1,0 +1,80 @@
+/* flex */
+
+.boxes_servicios {
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 60px;
+
+
+}
+
+.box_servicios {
+
+    width: 1400px;
+    height: 500px;
+    background-color: #f7bbbb;
+    display: flex;
+    overflow: hidden;
+    animation-name: animacion1;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-duration: 1s;
+    transform: translateX(0);
+
+    h2 {
+
+        color: #564f70;
+        font-family: 'Monserrat';
+        padding: 30px;
+    }
+
+    p {
+
+        padding: 20px;
+        color: #564f70;
+        font-family: 'Monserrat';
+    
+    }
+    
+    img {
+        width: 650px;
+        height: 500px;
+        object-fit: cover;
+    
+    
+    }
+
+    &:nth-child(even) {
+
+        flex-direction: row-reverse;
+        background-color: #f8c5c5;
+    }
+
+    &:hover {
+
+        background-color: #fdbaba;
+        box-shadow: 5px 5px 5px 0px #b38b8b;
+        transition: .5s;
+    }
+
+    &:hover img {
+
+        height: 600px;
+        transition: 1.5s;
+    }
+    
+    
+}
+
+@keyframes animacion1 {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
