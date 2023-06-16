@@ -14,6 +14,8 @@
     }
 
 
+
+
     /* index */
 
     .about-us {
@@ -23,6 +25,7 @@
 
             text-align: center;
             font-size: 40px;
+            padding: 0px;
         }
 
         .logoo {
@@ -303,6 +306,7 @@
 
             text-align: center;
             font-size: 35px;
+            padding: 0px;
         }
 
         .logoo {
@@ -539,6 +543,21 @@
 
     }
 
+    .logoscontacto {
+
+
+
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
 
 }
 
@@ -552,12 +571,19 @@
 @media only screen and (max-width:480px) {
 
 
+
+
     h1 {
         padding: 12px;
         margin-top: 150px;
         margin-bottom: 100px;
         font-size: 25px;
     }
+
+
+
+
+
 
 
 
@@ -569,6 +595,7 @@
 
             text-align: center;
             font-size: 25px;
+            padding: 0px;
         }
 
 
@@ -590,7 +617,7 @@
 
             p {
 
-                font-size: 18px;
+                font-size: 15px;
                 padding: 50px 0px 50px 0px;
                 text-align: justify;
 
@@ -610,7 +637,7 @@
 
 
             p {
-                font-size: 18px;
+                font-size: 15px;
                 padding: 50px 0px 50px 0px;
                 text-align: justify;
 
@@ -638,7 +665,7 @@
 
 
             p {
-                font-size: 18px;
+                font-size: 15px;
                 padding: 50px 0px 50px 0px;
                 text-align: justify;
 
@@ -714,7 +741,7 @@
 
         p {
             font-family: 'Monserrat';
-            font-size: 18px;
+            font-size: 15px;
             padding: 10px;
         }
 
@@ -769,7 +796,6 @@
     }
 
 
-
     .box_productos {
 
 
@@ -818,6 +844,22 @@
 
     }
 
+
+    .logoscontacto {
+
+
+
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
 
 
 }

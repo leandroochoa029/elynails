@@ -1,12 +1,7 @@
 /* flex */
 
 .boxes_servicios {
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 60px;
-
+    @include flexbox (row wrap,space-evenly,60px,50px)
 
 }
 
@@ -33,6 +28,7 @@
     p {
 
         padding: 50px;
+        padding-top: 80px;
         color: #564f70;
         font-family: 'Monserrat';
         font-size: 22px;

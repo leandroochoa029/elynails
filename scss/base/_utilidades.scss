@@ -1,0 +1,14 @@
+@mixin flexbox ($flow,$justify,$gap,$padding){
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    gap: $gap;
+    padding: $padding
+}
+
+@mixin contactos ($justify,$align,$padding){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    padding: $padding;
+}
