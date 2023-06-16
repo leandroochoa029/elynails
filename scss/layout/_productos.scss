@@ -13,7 +13,7 @@
 
     width: 1800px;
     height: 600px;
-    background-color: #f8c5c5;
+    background-color: $box-background-color;
     display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
@@ -27,9 +27,9 @@
         box-shadow: 5px 5px 5px 0px #b38b8b;
         transition: .5s;
         background-color: #fdbaba;
-    
+
     }
-    
+
     p {
 
         padding: 50px;
@@ -37,17 +37,16 @@
         font-family: 'Monserrat';
         margin: 0;
         font-size: 24px;
-    
+
     }
-    
+
     h2 {
 
-        color: #564f70;
-        font-family: 'Monserrat';
-        padding: 30px;
+        font-size: 30px;
+        padding: 30px 30px 0px 30px;
     }
 
-   
+
 }
 
 @keyframes animacion1 {
