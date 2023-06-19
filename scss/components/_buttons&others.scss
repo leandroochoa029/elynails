@@ -3,8 +3,11 @@
 
     background-color: #ffbbbb;
     border-color: #ffffff;
-    justify-content: center;
 
+    &:hover {
+        background-color: #fca0a0;
+        border-color: #e6e6e6;
+    }
 }
 
 .encabezado {

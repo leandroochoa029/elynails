@@ -2,11 +2,13 @@
 
 .hero img {
 
-    height: 750px;
+    height: 700px;
     object-fit: cover;
     animation-name: animacion2;
     animation-timing-function: linear;
     animation-duration: 3.5s;
+    filter: brightness(0.9);
+    
 
 
 }
