@@ -32,6 +32,22 @@ a {
   font-weight: bold;
 }
 
+.heros img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  animation-name: animacion2;
+  animation-timing-function: linear;
+  animation-duration: 3.5s;
+  filter: brightness(85%);
+}
+.heros h1 {
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  right: 22%;
+}
+
 /* Menu de navegacion */
 .navbar.navbar-expand-md {
   background-color: #fccccc;
@@ -212,6 +228,7 @@ a {
 }
 
 .logoscontacto {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,34 +260,41 @@ h2 {
   padding-top: 140px;
 }
 
-.hero-productos {
-  background: url(/42895/images/esmaltesproductos.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 700px;
+.productos {
   display: flex;
+}
+.productos .lista-productos {
+  display: flex;
+}
+.productos .lista-productos .categorias {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation-name: animacion2;
-  animation-timing-function: linear;
-  animation-duration: 3.5s;
+  padding: 30px;
+  gap: 60px;
+  margin-left: 45px;
+  margin-bottom: 100px;
 }
-.hero-productos h1 {
-  color: #fcf3f3;
+.productos .lista-productos .categorias .item-categoria {
+  width: 100%;
+  background-color: #dfbfbf;
+  text-align: center;
+  padding: 20px;
 }
-
-.tarjetas {
+.productos .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  margin: 0px;
-  gap: 50px;
-  padding: 50px 0px 50px 0px;
 }
-.tarjetas .border-3 {
+.productos .border-3 {
   border-color: #fae5e5;
 }
-.tarjetas .card {
+.productos .card {
   width: 18rem;
   background-color: #fceeee;
   align-items: center;
@@ -281,14 +305,14 @@ h2 {
   animation-duration: 1s;
   transform: translateX(0);
 }
-.tarjetas .card img {
+.productos .card img {
   padding-top: 11px;
   object-fit: cover;
   width: 200px;
   height: 400px;
   border-radius: 20px;
 }
-.tarjetas .card:hover {
+.productos .card:hover {
   box-shadow: 0px 25px 20px 0px #dfbfbf;
   transition: 0.2s;
 }
@@ -362,24 +386,6 @@ h2 {
     opacity: 1;
   }
 }
-.hero-trabajos {
-  background: url(/42895/images/herotrabajos.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-name: animacion2;
-  animation-timing-function: linear;
-  animation-duration: 3.5s;
-  margin-bottom: 80px;
-}
-.hero-trabajos h1 {
-  color: #ffffff;
-}
-
 /* grilla */
 .grids {
   display: grid;
@@ -389,6 +395,7 @@ h2 {
   margin: 0 auto;
   gap: 30px;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .grid img {
@@ -415,10 +422,15 @@ h2 {
 /*media queries*/
 @media only screen and (max-width: 1024px) {
   h1 {
-    padding: 12px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    font-size: 50px;
+    padding: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 60px;
+  }
+  .heros h1 {
+    position: absolute;
+    left: 30%;
+    top: 30%;
   }
   /* index */
   .about-us h1 {
@@ -533,42 +545,42 @@ h2 {
     font-size: 22px;
     padding: 15px 15px 0px 15px;
   }
-  .box_productos {
-    height: 350px;
-    width: 100%;
-    text-align: left;
-    background-color: #f8c5c5;
+  .productos {
+    display: inline-block;
   }
-  .box_productos img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    padding-top: 10px;
+  .productos .lista-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .box_productos:hover img {
-    height: 300px;
-    transition: 0.8s;
+  .productos .lista-productos .categorias {
+    gap: 30px;
+    margin-left: 0px;
+    margin-bottom: 100px;
   }
-  .box_productos p {
-    padding: 15px;
-    color: #564f70;
-    font-family: "Monserrat";
-    font-size: 20px;
-  }
-  .box_productos h2 {
-    font-size: 22px;
-    padding: 20px 20px 20px 20px;
+  .productos .lista-productos .categorias .item-categoria {
+    width: 175%;
+    background-color: #dfbfbf;
+    text-align: center;
+    padding: 20px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
   h1 {
     padding: 12px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 40px;
   }
   h2 {
     font-size: 25px;
+  }
+  .heros h1 {
+    position: absolute;
+    left: 30%;
+    top: 35%;
   }
   /* index */
   .about-us h1 {
@@ -684,31 +696,26 @@ h2 {
   .box_servicios h2 {
     text-align: center;
   }
-  .boxes_productos {
-    padding: 20px;
+  .productos {
+    display: inline-block;
   }
-  .box_productos {
-    height: 400px;
-    width: 100%;
-    background-color: #f8c5c5;
+  .productos .lista-productos {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: left;
   }
-  .box_productos img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    padding-top: 10px;
+  .productos .lista-productos .categorias {
+    gap: 30px;
+    margin-left: 0px;
+    margin-bottom: 100px;
   }
-  .box_productos:hover img {
-    height: 250px;
-    transition: 0.8s;
-  }
-  .box_productos p {
+  .productos .lista-productos .categorias .item-categoria {
+    width: 135%;
+    background-color: #dfbfbf;
+    text-align: center;
     padding: 20px;
-    color: #564f70;
-    font-family: "Monserrat";
-    font-size: 19px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
   .logoscontacto img {
     width: 80px;
@@ -722,9 +729,14 @@ h2 {
 @media only screen and (max-width: 480px) {
   h1 {
     padding: 12px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    font-size: 25px;
+    font-size: 30px;
+  }
+  .heros h1 {
+    position: absolute;
+    left: 30%;
+    top: 35%;
   }
   /* index */
   .about-us h1 {
@@ -844,30 +856,27 @@ h2 {
     font-size: 16px;
     text-align: center;
   }
-  .box_productos {
-    height: 300px;
-    width: 100%;
-    text-align: left;
-    background-color: #f8c5c5;
+  .productos {
+    display: inline-block;
+  }
+  .productos .lista-productos {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
-  .box_productos img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  .productos .lista-productos .categorias {
+    padding: 30px 0px 0px 5px;
+    gap: 30px;
+    margin-left: 0px;
+    margin-bottom: 100px;
   }
-  .box_productos:hover img {
-    height: 150px;
-    transition: 0.8s;
-  }
-  .box_productos p {
-    padding: 20px;
-    font-size: 13px;
-  }
-  .box_productos h2 {
-    padding: 10px;
-    font-size: 15px;
+  .productos .lista-productos .categorias .item-categoria {
+    width: 100%;
+    background-color: #dfbfbf;
     text-align: center;
+    padding: 20px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
   .logoscontacto img {
     width: 50px;

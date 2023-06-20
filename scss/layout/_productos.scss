@@ -1,36 +1,45 @@
-.hero-productos {
-
-    background: url(/42895/images/esmaltesproductos.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
+.productos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: animacion2;
-    animation-timing-function: linear;
-    animation-duration: 3.5s;
 
-    h1 {
-        color: #fcf3f3;
+
+    .lista-productos {
+        display: flex;
+
+        .categorias {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            gap: 60px;
+            margin-left: 45px;
+            margin-bottom: 100px;
+
+            .item-categoria {
+
+                width: 100%;
+                background-color: #dfbfbf;
+                text-align: center;
+                padding: 20px;
+            }
+
+
+        }
+    }
+
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
 
     }
-}
 
-
-
-
-
-
-.tarjetas {
-
-
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    gap: 50px;
-    padding: 50px 0px 50px 0px;
 
     .border-3 {
         border-color: #fae5e5;
@@ -69,6 +78,8 @@
 
 
     }
+
+
 
 
 
