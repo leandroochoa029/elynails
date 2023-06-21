@@ -272,9 +272,10 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 30px;
+  padding-top: 0px;
   gap: 60px;
   margin-left: 45px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .productos .lista-productos .categorias .item-categoria {
   width: 100%;
@@ -308,7 +309,7 @@ h2 {
 .productos .card img {
   padding-top: 11px;
   object-fit: cover;
-  width: 200px;
+  width: 190px;
   height: 400px;
   border-radius: 20px;
 }
