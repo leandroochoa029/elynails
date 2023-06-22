@@ -39,7 +39,6 @@ a {
   animation-name: animacion2;
   animation-timing-function: linear;
   animation-duration: 3.5s;
-  filter: brightness(85%);
 }
 .heros h1 {
   color: #ffffff;
@@ -95,7 +94,6 @@ a {
   animation-name: animacion2;
   animation-timing-function: linear;
   animation-duration: 3.5s;
-  filter: brightness(0.9);
 }
 
 /* cards */
@@ -492,7 +490,7 @@ h2 {
     justify-content: center;
   }
   .hero img {
-    height: 350px;
+    height: 700px;
     object-fit: cover;
   }
   /* cards */
@@ -650,7 +648,7 @@ h2 {
     justify-content: center;
   }
   .hero img {
-    height: 350px;
+    height: 480px;
     object-fit: cover;
   }
   /* cards */
@@ -806,7 +804,7 @@ h2 {
     height: 300px;
   }
   .hero img {
-    height: 220px;
+    height: 400px;
     object-fit: cover;
   }
   /* cards */
