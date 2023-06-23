@@ -19,4 +19,12 @@
 .nav-link {
 
     font-size: 22px;
+    margin-right: 20px;
+    &:hover {
+
+        transform:scale(1.15);
+        transition: 0.1s;
+        
+       
+    }
 }
