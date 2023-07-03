@@ -220,18 +220,28 @@ a {
   height: 600px;
 }
 
+.contactoflex {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 60px;
+}
+
 .Instagram img {
   width: 100px;
   height: 100px;
-  margin-bottom: 150px;
+}
+
+.contacth1 {
+  position: absolute;
+  left: 20%;
 }
 
 .formulario {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .logoscontacto {
-  margin-top: 50px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,6 +271,10 @@ h2 {
   font-size: 40px;
   padding: 80px;
   padding-top: 140px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .productos {
@@ -553,6 +567,11 @@ h2 {
   .box_servicios h2 {
     font-size: 22px;
     padding: 15px 15px 0px 15px;
+  }
+  .contactoflex {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
   }
   .productos {
     display: inline-block;

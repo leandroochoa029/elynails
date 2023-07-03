@@ -229,6 +229,13 @@
     }
 
 
+    .contactoflex {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+
 
     .productos {
         display: inline-block;
@@ -831,9 +838,11 @@
             }
         }
     }
+    
 
 
     .logoscontacto {
+    
 
 
 
@@ -848,6 +857,8 @@
             font-weight: bold;
         }
     }
+
+    
 
 
 }

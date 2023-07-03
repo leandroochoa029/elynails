@@ -6,20 +6,31 @@
 
 }
 
+.contactoflex {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px;
+}
+
 .Instagram img {
 
     width: 100px;
     height: 100px;
-    margin-bottom: 150px;
+    
+    
 
+}
+.contacth1 {
+    position: absolute;
+    left: 20%;
 }
 
 .formulario {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .logoscontacto {
-    margin-top: 50px;
+    margin-bottom: 60px;
     
 
     img {
@@ -47,10 +58,3 @@
 
 
 
-h2 {
-
-    font-size: 40px;
-    padding: 80px;
-    padding-top: 140px;
-
-}
